@@ -1,0 +1,72 @@
+#N canvas 772 52 1800 821 10;
+#X obj 17 160 mTDelHarmo8;
+#X obj 17 117 r mTctrl;
+#X obj 616 34 _inputSound;
+#N canvas 1509 476 1123 569 valueInit 0;
+#X obj 435 46 loadbang;
+#X msg 180 192 \; mTctrl tStretch 0.2 \; mTctrl hStretch 4 \; mTctrl
+wHarmo 64 \; mTctrl smoothDuration 50 \;;
+#X obj 435 88 t b b b b b b b b;
+#X msg 956 189 \; mTctrl init \; mTctrl d-0 300 \; mTctrl d-1 425 \;
+mTctrl d-2 800 \; mTctrl d-3 925 \; mTctrl d-4 1300 \; mTctrl d-5 1800
+\; mTctrl d-6 2050 \; mTctrl d-7 2300 \;;
+#X msg 830 190 \; mTctrl fd-0 0.99 \; mTctrl fd-1 0.99 \; mTctrl fd-2
+0.99 \; mTctrl fd-3 0.99 \; mTctrl fd-4 0.99 \; mTctrl fd-5 0.99 \;
+mTctrl fd-6 0.99 \; mTctrl fd-7 0.99 \;;
+#X msg 716 190 \; mTctrl xvd-0 1 \; mTctrl xvd-1 1 \; mTctrl xvd-2
+1 \; mTctrl xvd-3 1 \; mTctrl xvd-4 1 \; mTctrl xvd-5 1 \; mTctrl xvd-6
+1 \; mTctrl xvd-7 1 \;;
+#X msg 585 189 \; mTctrl tr-0 386 \; mTctrl tr-1 772 \; mTctrl tr-2
+-386 \; mTctrl tr-3 180 \; mTctrl tr-4 386 \; mTctrl tr-5 -772 \; mTctrl
+tr-6 -45 \; mTctrl tr-7 180 \;;
+#X msg 355 191 \; mTctrl out-0 1 \; mTctrl out-1 1 \; mTctrl out-2
+1 \; mTctrl out-3 1 \; mTctrl out-4 1 \; mTctrl out-5 1 \; mTctrl out-6
+1 \; mTctrl out-7 1 \;;
+#X msg 65 193 \; mTctrl r-0 1 \; mTctrl r-17 1 \; mTctrl r-34 1 \;
+mTctrl r-51 1 \; mTctrl r-68 1 \; mTctrl r-85 1 \; mTctrl r102 1 \;
+mTctrl r119 1 \; mTctrl r136 1 \; mTctrl r153 1 \; mTctrl r170 1 \;
+mTctrl r187 1 \; mTctrl r-8 1 \; mTctrl r-25 1 \; mTctrl r-42 1 \;
+mTctrl r-59 1 \;;
+#X msg 470 191 \; mTctrl inp-0 1 \; mTctrl inp-1 1 \; mTctrl inp-2
+1 \; mTctrl inp-3 1 \; mTctrl inp-4 1 \; mTctrl inp-5 1 \; mTctrl inp-6
+1 \; mTctrl inp-7 1 \;;
+#X connect 0 0 2 0;
+#X connect 2 0 8 0;
+#X connect 2 1 1 0;
+#X connect 2 2 7 0;
+#X connect 2 3 9 0;
+#X connect 2 4 6 0;
+#X connect 2 5 5 0;
+#X connect 2 6 4 0;
+#X connect 2 7 3 0;
+#X restore 314 78 pd valueInit;
+#X obj 1004 749 *~;
+#X obj 1100 746 *~;
+#X obj 1195 781 hsl 100 15 0 1 0 0 empty empty vol -2 -8 0 10 -262144
+-1 -1 6200 1;
+#X obj 1046 780 dac~;
+#X msg 142 72 \; pd dsp 0 \;;
+#X msg 214 73 \; pd dsp 1 \;;
+#X obj 15 16 cnv 15 350 30 empty empty mTDelHarmo12~_with_controller
+20 12 0 18 -99865 -262144 0;
+#X connect 0 1 4 0;
+#X connect 0 2 5 0;
+#X connect 0 3 4 0;
+#X connect 0 4 5 0;
+#X connect 0 5 4 0;
+#X connect 0 6 5 0;
+#X connect 0 7 4 0;
+#X connect 0 8 5 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X connect 2 0 0 2;
+#X connect 2 0 0 3;
+#X connect 2 0 0 4;
+#X connect 2 0 0 5;
+#X connect 2 0 0 6;
+#X connect 2 0 0 7;
+#X connect 2 0 0 8;
+#X connect 4 0 7 0;
+#X connect 5 0 7 1;
+#X connect 6 0 4 1;
+#X connect 6 0 5 1;

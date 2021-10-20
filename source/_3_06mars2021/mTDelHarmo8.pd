@@ -1,0 +1,2321 @@
+#N canvas 0 22 1440 795 10;
+#X obj 70 360 inlet~;
+#X obj 130 360 inlet~;
+#X obj 190 360 inlet~;
+#X obj 250 360 inlet~;
+#X obj 310 360 inlet~;
+#X obj 370 360 inlet~;
+#X obj 430 360 inlet~;
+#X obj 490 360 inlet~;
+#X obj 10 360 inlet;
+#X obj 550 360 r \$0-read;
+#X obj 550 390 faust-control \$0;
+#X obj 550 420 s \$0-write;
+#X obj 10 420 r \$0-in;
+#X obj 10 450 mTDelHarmo8~;
+#X obj 10 480 s \$0-out;
+#X obj 70 510 outlet~;
+#X obj 130 510 outlet~;
+#X obj 190 510 outlet~;
+#X obj 250 510 outlet~;
+#X obj 310 510 outlet~;
+#X obj 370 510 outlet~;
+#X obj 430 510 outlet~;
+#X obj 490 510 outlet~;
+#X obj 10 510 outlet;
+#X obj 27 21 hsl 128 15 0.01 10 0 0 \$0-mTDelHarmo8/Global-Parameters/dStretch
+\$0-mTDelHarmo8/Global-Parameters/dStretch dStretch -2 -6 0 10 -262144
+-1 -1 1259 1;
+#X obj 177 21 nbx 5 14 0.01 10 0 0 \$0-mTDelHarmo8/Global-Parameters/dStretch
+\$0-mTDelHarmo8/Global-Parameters/dStretch empty 0 -6 0 10 -262144
+-1 -1 1 256;
+#X obj 362 626 hsl 128 15 -10 10 0 0 \$0-mTDelHarmo8/Global-Parameters/hStretch
+\$0-mTDelHarmo8/Global-Parameters/hStretch hStretch -2 -6 0 10 -262144
+-1 -1 8890 1;
+#X obj 512 626 nbx 5 14 -10 10 0 0 \$0-mTDelHarmo8/Global-Parameters/hStretch
+\$0-mTDelHarmo8/Global-Parameters/hStretch empty 0 -6 0 10 -262144
+-1 -1 4 256;
+#X obj 587 626 hsl 128 15 1 127 0 0 \$0-mTDelHarmo8/Global-Parameters/hWin
+\$0-mTDelHarmo8/Global-Parameters/hWin hWin -2 -6 0 10 -262144 -1 -1
+6350 1;
+#X obj 737 626 nbx 5 14 1 127 0 0 \$0-mTDelHarmo8/Global-Parameters/hWin
+\$0-mTDelHarmo8/Global-Parameters/hWin empty 0 -6 0 10 -262144 -1 -1
+64 256;
+#X obj 263 21 hsl 128 15 10 5000 0 0 \$0-mTDelHarmo8/Global-Parameters/smoothDuration
+\$0-mTDelHarmo8/Global-Parameters/smoothDuration smoothDuration -2
+-6 0 10 -262144 -1 -1 102 1;
+#X obj 413 21 nbx 5 14 10 5000 0 0 \$0-mTDelHarmo8/Global-Parameters/smoothDuration
+\$0-mTDelHarmo8/Global-Parameters/smoothDuration empty 0 -6 0 10 -262144
+-1 -1 50 256;
+#X obj 27 51 hsl 128 15 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-0
+\$0-mTDelHarmo8/Lines/Del-Durations/d-0 d-0 -2 -6 0 10 -262144 -1 -1
+181 1;
+#X obj 177 51 nbx 5 14 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-0
+\$0-mTDelHarmo8/Lines/Del-Durations/d-0 empty 0 -6 0 10 -262144 -1
+-1 300 256;
+#X obj 27 81 hsl 128 15 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-1
+\$0-mTDelHarmo8/Lines/Del-Durations/d-1 d-1 -2 -6 0 10 -262144 -1 -1
+257 1;
+#X obj 177 81 nbx 5 14 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-1
+\$0-mTDelHarmo8/Lines/Del-Durations/d-1 empty 0 -6 0 10 -262144 -1
+-1 425 256;
+#X obj 27 111 hsl 128 15 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-2
+\$0-mTDelHarmo8/Lines/Del-Durations/d-2 d-2 -2 -6 0 10 -262144 -1 -1
+484 1;
+#X obj 177 111 nbx 5 14 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-2
+\$0-mTDelHarmo8/Lines/Del-Durations/d-2 empty 0 -6 0 10 -262144 -1
+-1 800 256;
+#X obj 27 141 hsl 128 15 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-3
+\$0-mTDelHarmo8/Lines/Del-Durations/d-3 d-3 -2 -6 0 10 -262144 -1 -1
+559 1;
+#X obj 177 141 nbx 5 14 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-3
+\$0-mTDelHarmo8/Lines/Del-Durations/d-3 empty 0 -6 0 10 -262144 -1
+-1 925 256;
+#X obj 27 171 hsl 128 15 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-4
+\$0-mTDelHarmo8/Lines/Del-Durations/d-4 d-4 -2 -6 0 10 -262144 -1 -1
+786 1;
+#X obj 177 171 nbx 5 14 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-4
+\$0-mTDelHarmo8/Lines/Del-Durations/d-4 empty 0 -6 0 10 -262144 -1
+-1 1300 256;
+#X obj 27 201 hsl 128 15 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-5
+\$0-mTDelHarmo8/Lines/Del-Durations/d-5 d-5 -2 -6 0 10 -262144 -1 -1
+1089 1;
+#X obj 177 201 nbx 5 14 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-5
+\$0-mTDelHarmo8/Lines/Del-Durations/d-5 empty 0 -6 0 10 -262144 -1
+-1 1800 256;
+#X obj 27 231 hsl 128 15 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-6
+\$0-mTDelHarmo8/Lines/Del-Durations/d-6 d-6 -2 -6 0 10 -262144 -1 -1
+1240 1;
+#X obj 177 231 nbx 5 14 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-6
+\$0-mTDelHarmo8/Lines/Del-Durations/d-6 empty 0 -6 0 10 -262144 -1
+-1 2050 256;
+#X obj 27 261 hsl 128 15 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-7
+\$0-mTDelHarmo8/Lines/Del-Durations/d-7 d-7 -2 -6 0 10 -262144 -1 -1
+1391 1;
+#X obj 177 261 nbx 5 14 0 21000 0 0 \$0-mTDelHarmo8/Lines/Del-Durations/d-7
+\$0-mTDelHarmo8/Lines/Del-Durations/d-7 empty 0 -6 0 10 -262144 -1
+-1 2300 256;
+#X obj 362 656 hsl 128 15 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-0
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-0 fd-0 -2 -6 0 10 -262144 -1
+-1 6414 1;
+#X obj 512 656 nbx 5 14 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-0
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-0 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 362 686 hsl 128 15 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-1
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-1 fd-1 -2 -6 0 10 -262144 -1
+-1 6414 1;
+#X obj 512 686 nbx 5 14 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-1
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-1 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 362 716 hsl 128 15 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-2
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-2 fd-2 -2 -6 0 10 -262144 -1
+-1 6414 1;
+#X obj 512 716 nbx 5 14 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-2
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-2 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 362 746 hsl 128 15 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-3
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-3 fd-3 -2 -6 0 10 -262144 -1
+-1 6414 1;
+#X obj 512 746 nbx 5 14 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-3
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-3 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 362 776 hsl 128 15 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-4
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-4 fd-4 -2 -6 0 10 -262144 -1
+-1 6414 1;
+#X obj 512 776 nbx 5 14 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-4
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-4 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 362 806 hsl 128 15 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-5
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-5 fd-5 -2 -6 0 10 -262144 -1
+-1 6414 1;
+#X obj 512 806 nbx 5 14 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-5
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-5 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 362 836 hsl 128 15 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-6
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-6 fd-6 -2 -6 0 10 -262144 -1
+-1 6414 1;
+#X obj 512 836 nbx 5 14 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-6
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-6 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 362 866 hsl 128 15 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-7
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-7 fd-7 -2 -6 0 10 -262144 -1
+-1 6414 1;
+#X obj 512 866 nbx 5 14 0 0.99 0 0 \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-7
+\$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-7 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 587 656 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-0
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-0 xvd-0 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 737 656 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-0
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-0 empty 0 -6 0 10 -262144 -1
+-1 1 256;
+#X obj 587 686 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-1
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-1 xvd-1 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 737 686 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-1
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-1 empty 0 -6 0 10 -262144 -1
+-1 1 256;
+#X obj 587 716 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-2
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-2 xvd-2 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 737 716 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-2
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-2 empty 0 -6 0 10 -262144 -1
+-1 1 256;
+#X obj 587 746 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-3
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-3 xvd-3 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 737 746 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-3
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-3 empty 0 -6 0 10 -262144 -1
+-1 1 256;
+#X obj 587 776 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-4
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-4 xvd-4 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 737 776 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-4
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-4 empty 0 -6 0 10 -262144 -1
+-1 1 256;
+#X obj 587 806 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-5
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-5 xvd-5 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 737 806 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-5
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-5 empty 0 -6 0 10 -262144 -1
+-1 1 256;
+#X obj 587 836 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-6
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-6 xvd-6 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 737 836 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-6
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-6 empty 0 -6 0 10 -262144 -1
+-1 1 256;
+#X obj 587 866 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-7
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-7 xvd-7 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 737 866 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-7
+\$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-7 empty 0 -6 0 10 -262144 -1
+-1 1 256;
+#X obj 263 51 hsl 128 15 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-0
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-0 tr-0 -2 -6 0 10 -262144
+-1 -1 7371 1;
+#X obj 413 51 nbx 5 14 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-0
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-0 empty 0 -6 0 10 -262144
+-1 -1 386 256;
+#X obj 263 81 hsl 128 15 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-1
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-1 tr-1 -2 -6 0 10 -262144
+-1 -1 8393 1;
+#X obj 413 81 nbx 5 14 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-1
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-1 empty 0 -6 0 10 -262144
+-1 -1 772 256;
+#X obj 263 111 hsl 128 15 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-2
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-2 tr-2 -2 -6 0 10 -262144
+-1 -1 5329 1;
+#X obj 413 111 nbx 5 14 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-2
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-2 empty 0 -6 0 10 -262144
+-1 -1 -386 256;
+#X obj 263 141 hsl 128 15 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-3
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-3 tr-3 -2 -6 0 10 -262144
+-1 -1 6826 1;
+#X obj 413 141 nbx 5 14 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-3
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-3 empty 0 -6 0 10 -262144
+-1 -1 180 256;
+#X obj 263 171 hsl 128 15 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-4
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-4 tr-4 -2 -6 0 10 -262144
+-1 -1 7371 1;
+#X obj 413 171 nbx 5 14 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-4
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-4 empty 0 -6 0 10 -262144
+-1 -1 386 256;
+#X obj 263 201 hsl 128 15 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-5
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-5 tr-5 -2 -6 0 10 -262144
+-1 -1 4307 1;
+#X obj 413 201 nbx 5 14 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-5
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-5 empty 0 -6 0 10 -262144
+-1 -1 -772 256;
+#X obj 263 231 hsl 128 15 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-6
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-6 tr-6 -2 -6 0 10 -262144
+-1 -1 6231 1;
+#X obj 413 231 nbx 5 14 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-6
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-6 empty 0 -6 0 10 -262144
+-1 -1 -45 256;
+#X obj 263 261 hsl 128 15 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-7
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-7 tr-7 -2 -6 0 10 -262144
+-1 -1 6826 1;
+#X obj 413 261 nbx 5 14 -2400 2400 0 0 \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-7
+\$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-7 empty 0 -6 0 10 -262144
+-1 -1 180 256;
+#X obj 817 652 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-0
+\$0-mTDelHarmo8/Lines/Line-input/inp-0 inp-0 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 967 652 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-0
+\$0-mTDelHarmo8/Lines/Line-input/inp-0 empty 0 -6 0 10 -262144 -1 -1
+1 256;
+#X obj 817 682 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-1
+\$0-mTDelHarmo8/Lines/Line-input/inp-1 inp-1 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 967 682 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-1
+\$0-mTDelHarmo8/Lines/Line-input/inp-1 empty 0 -6 0 10 -262144 -1 -1
+1 256;
+#X obj 817 712 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-2
+\$0-mTDelHarmo8/Lines/Line-input/inp-2 inp-2 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 967 712 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-2
+\$0-mTDelHarmo8/Lines/Line-input/inp-2 empty 0 -6 0 10 -262144 -1 -1
+1 256;
+#X obj 817 742 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-3
+\$0-mTDelHarmo8/Lines/Line-input/inp-3 inp-3 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 967 742 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-3
+\$0-mTDelHarmo8/Lines/Line-input/inp-3 empty 0 -6 0 10 -262144 -1 -1
+1 256;
+#X obj 817 772 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-4
+\$0-mTDelHarmo8/Lines/Line-input/inp-4 inp-4 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 967 772 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-4
+\$0-mTDelHarmo8/Lines/Line-input/inp-4 empty 0 -6 0 10 -262144 -1 -1
+1 256;
+#X obj 817 802 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-5
+\$0-mTDelHarmo8/Lines/Line-input/inp-5 inp-5 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 967 802 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-5
+\$0-mTDelHarmo8/Lines/Line-input/inp-5 empty 0 -6 0 10 -262144 -1 -1
+1 256;
+#X obj 817 832 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-6
+\$0-mTDelHarmo8/Lines/Line-input/inp-6 inp-6 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 967 832 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-6
+\$0-mTDelHarmo8/Lines/Line-input/inp-6 empty 0 -6 0 10 -262144 -1 -1
+1 256;
+#X obj 817 862 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-7
+\$0-mTDelHarmo8/Lines/Line-input/inp-7 inp-7 -2 -6 0 10 -262144 -1
+-1 12700 1;
+#X obj 967 862 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-input/inp-7
+\$0-mTDelHarmo8/Lines/Line-input/inp-7 empty 0 -6 0 10 -262144 -1 -1
+1 256;
+#X obj 1042 652 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-0
+\$0-mTDelHarmo8/Lines/Line-output/out-0 out-0 -2 -6 0 10 -262144 -1
+-1 6350 1;
+#X obj 1192 652 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-0
+\$0-mTDelHarmo8/Lines/Line-output/out-0 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 1042 682 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-1
+\$0-mTDelHarmo8/Lines/Line-output/out-1 out-1 -2 -6 0 10 -262144 -1
+-1 6350 1;
+#X obj 1192 682 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-1
+\$0-mTDelHarmo8/Lines/Line-output/out-1 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 1042 712 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-2
+\$0-mTDelHarmo8/Lines/Line-output/out-2 out-2 -2 -6 0 10 -262144 -1
+-1 6350 1;
+#X obj 1192 712 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-2
+\$0-mTDelHarmo8/Lines/Line-output/out-2 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 1042 742 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-3
+\$0-mTDelHarmo8/Lines/Line-output/out-3 out-3 -2 -6 0 10 -262144 -1
+-1 6350 1;
+#X obj 1192 742 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-3
+\$0-mTDelHarmo8/Lines/Line-output/out-3 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 1042 772 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-4
+\$0-mTDelHarmo8/Lines/Line-output/out-4 out-4 -2 -6 0 10 -262144 -1
+-1 6350 1;
+#X obj 1192 772 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-4
+\$0-mTDelHarmo8/Lines/Line-output/out-4 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 1042 802 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-5
+\$0-mTDelHarmo8/Lines/Line-output/out-5 out-5 -2 -6 0 10 -262144 -1
+-1 6350 1;
+#X obj 1192 802 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-5
+\$0-mTDelHarmo8/Lines/Line-output/out-5 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 1042 832 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-6
+\$0-mTDelHarmo8/Lines/Line-output/out-6 out-6 -2 -6 0 10 -262144 -1
+-1 6350 1;
+#X obj 1192 832 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-6
+\$0-mTDelHarmo8/Lines/Line-output/out-6 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 1042 862 hsl 128 15 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-7
+\$0-mTDelHarmo8/Lines/Line-output/out-7 out-7 -2 -6 0 10 -262144 -1
+-1 6350 1;
+#X obj 1192 862 nbx 5 14 0 1 0 0 \$0-mTDelHarmo8/Lines/Line-output/out-7
+\$0-mTDelHarmo8/Lines/Line-output/out-7 empty 0 -6 0 10 -262144 -1
+-1 0.5 256;
+#X obj 1360 60 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-0
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-0 r-0 0 -6 0 10 -262144
+-1 -1 1 1;
+#X obj 1360 90 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-8
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-8 r-8 0 -6 0 10 -262144
+-1 -1 1 1;
+#X obj 1360 120 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-16
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-16 r-16 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1360 150 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-24
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-24 r-24 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1360 180 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-32
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-32 r-32 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1360 210 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-40
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-40 r-40 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1360 240 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-48
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-48 r-48 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1360 270 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-56
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-56 r-56 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1410 60 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-1
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-1 r-1 0 -6 0 10 -262144
+-1 -1 0 1;
+#X obj 1410 90 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-9
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-9 r-9 0 -6 0 10 -262144
+-1 -1 0 1;
+#X obj 1410 120 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-17
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-17 r-17 0 -6 0 10
+-262144 -1 -1 1 1;
+#X obj 1410 150 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-25
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-25 r-25 0 -6 0 10
+-262144 -1 -1 1 1;
+#X obj 1410 180 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-33
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-33 r-33 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1410 210 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-41
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-41 r-41 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1410 240 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-49
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-49 r-49 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1410 270 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-57
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-57 r-57 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1460 60 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-2
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-2 r-2 0 -6 0 10 -262144
+-1 -1 0 1;
+#X obj 1460 90 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-10
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-10 r-10 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1460 120 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-18
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-18 r-18 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1460 150 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-26
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-26 r-26 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1460 180 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-34
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-34 r-34 0 -6 0 10
+-262144 -1 -1 1 1;
+#X obj 1460 210 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-42
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-42 r-42 0 -6 0 10
+-262144 -1 -1 1 1;
+#X obj 1460 240 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-50
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-50 r-50 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1460 270 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-58
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-58 r-58 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1510 60 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-3
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-3 r-3 0 -6 0 10 -262144
+-1 -1 0 1;
+#X obj 1510 90 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-11
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-11 r-11 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1510 120 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-19
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-19 r-19 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1510 150 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-27
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-27 r-27 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1510 180 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-35
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-35 r-35 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1510 210 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-43
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-43 r-43 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1510 240 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-51
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-51 r-51 0 -6 0 10
+-262144 -1 -1 1 1;
+#X obj 1510 270 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-59
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-59 r-59 0 -6 0 10
+-262144 -1 -1 1 1;
+#X obj 1560 60 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-4
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-4 r-4 0 -6 0 10 -262144
+-1 -1 0 1;
+#X obj 1560 90 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-12
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-12 r-12 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1560 120 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-20
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-20 r-20 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1560 150 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-28
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-28 r-28 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1560 180 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-36
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-36 r-36 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1560 210 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-44
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-44 r-44 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1560 240 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-52
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-52 r-52 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1560 270 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-60
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-60 r-60 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1610 60 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-5
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-5 r-5 0 -6 0 10 -262144
+-1 -1 0 1;
+#X obj 1610 90 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-13
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-13 r-13 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1610 120 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-21
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-21 r-21 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1610 150 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-29
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-29 r-29 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1610 180 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-37
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-37 r-37 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1610 210 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-45
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-45 r-45 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1610 240 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-53
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-53 r-53 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1610 270 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-61
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-61 r-61 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1660 60 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-6
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-6 r-6 0 -6 0 10 -262144
+-1 -1 0 1;
+#X obj 1660 90 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-14
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-14 r-14 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1660 120 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-22
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-22 r-22 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1660 150 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-30
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-30 r-30 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1660 180 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-38
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-38 r-38 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1660 210 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-46
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-46 r-46 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1660 240 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-54
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-54 r-54 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1660 270 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-62
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-62 r-62 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1710 60 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-7
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-7 r-7 0 -6 0 10 -262144
+-1 -1 0 1;
+#X obj 1710 90 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-15
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-15 r-15 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1710 120 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-23
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-23 r-23 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1710 150 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-31
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-31 r-31 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1710 180 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-39
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-39 r-39 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1710 210 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-47
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-47 r-47 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1710 240 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-55
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-55 r-55 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1710 270 tgl 15 0 \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-63
+\$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-63 r-63 0 -6 0 10
+-262144 -1 -1 0 1;
+#X obj 1722 3 bng 15 250 50 1 \$0-init \$0-ignore empty 0 -6 0 10 -262144
+-1 -1;
+#X obj 1742 3 tgl 15 1 \$0-active \$0-active empty 0 -6 0 10 -262144
+-1 -1 1 1;
+#X obj 1790 10 r \$0-init;
+#X obj 2230 10 s \$0-in;
+#X obj 2450 10 s \$0-read;
+#X obj 2670 10 r \$0-write;
+#X msg 1790 30 1;
+#X obj 1790 50 s \$0-active;
+#X obj 2230 30 r \$0-active;
+#X msg 2230 50 active \$1;
+#X obj 2670 30 route active;
+#X obj 2670 50 s \$0-active;
+#X msg 1790 70 1;
+#X obj 1790 90 s \$0-mTDelHarmo8/Global-Parameters/dStretch;
+#X obj 2230 70 r \$0-mTDelHarmo8/Global-Parameters/dStretch;
+#X msg 2230 90 /mTDelHarmo8/Global-Parameters/dStretch \$1;
+#X obj 2670 70 route /mTDelHarmo8/Global-Parameters/dStretch;
+#X obj 2670 90 s \$0-mTDelHarmo8/Global-Parameters/dStretch;
+#X msg 1790 110 1;
+#X obj 1790 130 s \$0-mTDelHarmo8/Global-Parameters/hStretch;
+#X obj 2230 110 r \$0-mTDelHarmo8/Global-Parameters/hStretch;
+#X msg 2230 130 /mTDelHarmo8/Global-Parameters/hStretch \$1;
+#X obj 2670 110 route /mTDelHarmo8/Global-Parameters/hStretch;
+#X obj 2670 130 s \$0-mTDelHarmo8/Global-Parameters/hStretch;
+#X msg 1790 150 64;
+#X obj 1790 170 s \$0-mTDelHarmo8/Global-Parameters/hWin;
+#X obj 2230 150 r \$0-mTDelHarmo8/Global-Parameters/hWin;
+#X msg 2230 170 /mTDelHarmo8/Global-Parameters/hWin \$1;
+#X obj 2670 150 route /mTDelHarmo8/Global-Parameters/hWin;
+#X obj 2670 170 s \$0-mTDelHarmo8/Global-Parameters/hWin;
+#X msg 1790 190 20;
+#X obj 1790 210 s \$0-mTDelHarmo8/Global-Parameters/smoothDuration
+;
+#X obj 2230 190 r \$0-mTDelHarmo8/Global-Parameters/smoothDuration
+;
+#X msg 2230 210 /mTDelHarmo8/Global-Parameters/smoothDuration \$1;
+#X obj 2670 190 route /mTDelHarmo8/Global-Parameters/smoothDuration
+;
+#X obj 2670 210 s \$0-mTDelHarmo8/Global-Parameters/smoothDuration
+;
+#X msg 1790 230 100;
+#X obj 1790 250 s \$0-mTDelHarmo8/Lines/Del-Durations/d-0;
+#X obj 2230 230 r \$0-mTDelHarmo8/Lines/Del-Durations/d-0;
+#X msg 2230 250 /mTDelHarmo8/Lines/Del-Durations/d-0 \$1;
+#X obj 2670 230 route /mTDelHarmo8/Lines/Del-Durations/d-0;
+#X obj 2670 250 s \$0-mTDelHarmo8/Lines/Del-Durations/d-0;
+#X msg 1790 270 200;
+#X obj 1790 290 s \$0-mTDelHarmo8/Lines/Del-Durations/d-1;
+#X obj 2230 270 r \$0-mTDelHarmo8/Lines/Del-Durations/d-1;
+#X msg 2230 290 /mTDelHarmo8/Lines/Del-Durations/d-1 \$1;
+#X obj 2670 270 route /mTDelHarmo8/Lines/Del-Durations/d-1;
+#X obj 2670 290 s \$0-mTDelHarmo8/Lines/Del-Durations/d-1;
+#X msg 1790 310 300;
+#X obj 1790 330 s \$0-mTDelHarmo8/Lines/Del-Durations/d-2;
+#X obj 2230 310 r \$0-mTDelHarmo8/Lines/Del-Durations/d-2;
+#X msg 2230 330 /mTDelHarmo8/Lines/Del-Durations/d-2 \$1;
+#X obj 2670 310 route /mTDelHarmo8/Lines/Del-Durations/d-2;
+#X obj 2670 330 s \$0-mTDelHarmo8/Lines/Del-Durations/d-2;
+#X msg 1790 350 400;
+#X obj 1790 370 s \$0-mTDelHarmo8/Lines/Del-Durations/d-3;
+#X obj 2230 350 r \$0-mTDelHarmo8/Lines/Del-Durations/d-3;
+#X msg 2230 370 /mTDelHarmo8/Lines/Del-Durations/d-3 \$1;
+#X obj 2670 350 route /mTDelHarmo8/Lines/Del-Durations/d-3;
+#X obj 2670 370 s \$0-mTDelHarmo8/Lines/Del-Durations/d-3;
+#X msg 1790 390 500;
+#X obj 1790 410 s \$0-mTDelHarmo8/Lines/Del-Durations/d-4;
+#X obj 2230 390 r \$0-mTDelHarmo8/Lines/Del-Durations/d-4;
+#X msg 2230 410 /mTDelHarmo8/Lines/Del-Durations/d-4 \$1;
+#X obj 2670 390 route /mTDelHarmo8/Lines/Del-Durations/d-4;
+#X obj 2670 410 s \$0-mTDelHarmo8/Lines/Del-Durations/d-4;
+#X msg 1790 430 600;
+#X obj 1790 450 s \$0-mTDelHarmo8/Lines/Del-Durations/d-5;
+#X obj 2230 430 r \$0-mTDelHarmo8/Lines/Del-Durations/d-5;
+#X msg 2230 450 /mTDelHarmo8/Lines/Del-Durations/d-5 \$1;
+#X obj 2670 430 route /mTDelHarmo8/Lines/Del-Durations/d-5;
+#X obj 2670 450 s \$0-mTDelHarmo8/Lines/Del-Durations/d-5;
+#X msg 1790 470 700;
+#X obj 1790 490 s \$0-mTDelHarmo8/Lines/Del-Durations/d-6;
+#X obj 2230 470 r \$0-mTDelHarmo8/Lines/Del-Durations/d-6;
+#X msg 2230 490 /mTDelHarmo8/Lines/Del-Durations/d-6 \$1;
+#X obj 2670 470 route /mTDelHarmo8/Lines/Del-Durations/d-6;
+#X obj 2670 490 s \$0-mTDelHarmo8/Lines/Del-Durations/d-6;
+#X msg 1790 510 800;
+#X obj 1790 530 s \$0-mTDelHarmo8/Lines/Del-Durations/d-7;
+#X obj 2230 510 r \$0-mTDelHarmo8/Lines/Del-Durations/d-7;
+#X msg 2230 530 /mTDelHarmo8/Lines/Del-Durations/d-7 \$1;
+#X obj 2670 510 route /mTDelHarmo8/Lines/Del-Durations/d-7;
+#X obj 2670 530 s \$0-mTDelHarmo8/Lines/Del-Durations/d-7;
+#X msg 1790 550 0;
+#X obj 1790 570 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-0;
+#X obj 2230 550 r \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-0;
+#X msg 2230 570 /mTDelHarmo8/Lines/Del-Feedbacks/fd-0 \$1;
+#X obj 2670 550 route /mTDelHarmo8/Lines/Del-Feedbacks/fd-0;
+#X obj 2670 570 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-0;
+#X msg 1790 590 0;
+#X obj 1790 610 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-1;
+#X obj 2230 590 r \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-1;
+#X msg 2230 610 /mTDelHarmo8/Lines/Del-Feedbacks/fd-1 \$1;
+#X obj 2670 590 route /mTDelHarmo8/Lines/Del-Feedbacks/fd-1;
+#X obj 2670 610 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-1;
+#X msg 1790 630 0;
+#X obj 1790 650 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-2;
+#X obj 2230 630 r \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-2;
+#X msg 2230 650 /mTDelHarmo8/Lines/Del-Feedbacks/fd-2 \$1;
+#X obj 2670 630 route /mTDelHarmo8/Lines/Del-Feedbacks/fd-2;
+#X obj 2670 650 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-2;
+#X msg 1790 670 0;
+#X obj 1790 690 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-3;
+#X obj 2230 670 r \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-3;
+#X msg 2230 690 /mTDelHarmo8/Lines/Del-Feedbacks/fd-3 \$1;
+#X obj 2670 670 route /mTDelHarmo8/Lines/Del-Feedbacks/fd-3;
+#X obj 2670 690 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-3;
+#X msg 1790 710 0;
+#X obj 1790 730 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-4;
+#X obj 2230 710 r \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-4;
+#X msg 2230 730 /mTDelHarmo8/Lines/Del-Feedbacks/fd-4 \$1;
+#X obj 2670 710 route /mTDelHarmo8/Lines/Del-Feedbacks/fd-4;
+#X obj 2670 730 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-4;
+#X msg 1790 750 0;
+#X obj 1790 770 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-5;
+#X obj 2230 750 r \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-5;
+#X msg 2230 770 /mTDelHarmo8/Lines/Del-Feedbacks/fd-5 \$1;
+#X obj 2670 750 route /mTDelHarmo8/Lines/Del-Feedbacks/fd-5;
+#X obj 2670 770 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-5;
+#X msg 1790 790 0;
+#X obj 1790 810 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-6;
+#X obj 2230 790 r \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-6;
+#X msg 2230 810 /mTDelHarmo8/Lines/Del-Feedbacks/fd-6 \$1;
+#X obj 2670 790 route /mTDelHarmo8/Lines/Del-Feedbacks/fd-6;
+#X obj 2670 810 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-6;
+#X msg 1790 830 0;
+#X obj 1790 850 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-7;
+#X obj 2230 830 r \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-7;
+#X msg 2230 850 /mTDelHarmo8/Lines/Del-Feedbacks/fd-7 \$1;
+#X obj 2670 830 route /mTDelHarmo8/Lines/Del-Feedbacks/fd-7;
+#X obj 2670 850 s \$0-mTDelHarmo8/Lines/Del-Feedbacks/fd-7;
+#X msg 1790 870 1;
+#X obj 1790 890 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-0;
+#X obj 2230 870 r \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-0;
+#X msg 2230 890 /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-0 \$1;
+#X obj 2670 870 route /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-0;
+#X obj 2670 890 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-0;
+#X msg 1790 910 1;
+#X obj 1790 930 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-1;
+#X obj 2230 910 r \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-1;
+#X msg 2230 930 /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-1 \$1;
+#X obj 2670 910 route /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-1;
+#X obj 2670 930 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-1;
+#X msg 1790 950 1;
+#X obj 1790 970 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-2;
+#X obj 2230 950 r \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-2;
+#X msg 2230 970 /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-2 \$1;
+#X obj 2670 950 route /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-2;
+#X obj 2670 970 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-2;
+#X msg 1790 990 1;
+#X obj 1790 1010 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-3;
+#X obj 2230 990 r \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-3;
+#X msg 2230 1010 /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-3 \$1;
+#X obj 2670 990 route /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-3;
+#X obj 2670 1010 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-3;
+#X msg 1790 1030 1;
+#X obj 1790 1050 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-4;
+#X obj 2230 1030 r \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-4;
+#X msg 2230 1050 /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-4 \$1;
+#X obj 2670 1030 route /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-4;
+#X obj 2670 1050 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-4;
+#X msg 1790 1070 1;
+#X obj 1790 1090 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-5;
+#X obj 2230 1070 r \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-5;
+#X msg 2230 1090 /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-5 \$1;
+#X obj 2670 1070 route /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-5;
+#X obj 2670 1090 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-5;
+#X msg 1790 1110 1;
+#X obj 1790 1130 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-6;
+#X obj 2230 1110 r \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-6;
+#X msg 2230 1130 /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-6 \$1;
+#X obj 2670 1110 route /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-6;
+#X obj 2670 1130 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-6;
+#X msg 1790 1150 1;
+#X obj 1790 1170 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-7;
+#X obj 2230 1150 r \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-7;
+#X msg 2230 1170 /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-7 \$1;
+#X obj 2670 1150 route /mTDelHarmo8/Lines/EffeX-vs-Del/xvd-7;
+#X obj 2670 1170 s \$0-mTDelHarmo8/Lines/EffeX-vs-Del/xvd-7;
+#X msg 1790 1190 0;
+#X obj 1790 1210 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-0
+;
+#X obj 2230 1190 r \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-0
+;
+#X msg 2230 1210 /mTDelHarmo8/Lines/Harmo-Transpositions/tr-0 \$1;
+#X obj 2670 1190 route /mTDelHarmo8/Lines/Harmo-Transpositions/tr-0
+;
+#X obj 2670 1210 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-0
+;
+#X msg 1790 1230 0;
+#X obj 1790 1250 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-1
+;
+#X obj 2230 1230 r \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-1
+;
+#X msg 2230 1250 /mTDelHarmo8/Lines/Harmo-Transpositions/tr-1 \$1;
+#X obj 2670 1230 route /mTDelHarmo8/Lines/Harmo-Transpositions/tr-1
+;
+#X obj 2670 1250 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-1
+;
+#X msg 1790 1270 0;
+#X obj 1790 1290 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-2
+;
+#X obj 2230 1270 r \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-2
+;
+#X msg 2230 1290 /mTDelHarmo8/Lines/Harmo-Transpositions/tr-2 \$1;
+#X obj 2670 1270 route /mTDelHarmo8/Lines/Harmo-Transpositions/tr-2
+;
+#X obj 2670 1290 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-2
+;
+#X msg 1790 1310 0;
+#X obj 1790 1330 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-3
+;
+#X obj 2230 1310 r \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-3
+;
+#X msg 2230 1330 /mTDelHarmo8/Lines/Harmo-Transpositions/tr-3 \$1;
+#X obj 2670 1310 route /mTDelHarmo8/Lines/Harmo-Transpositions/tr-3
+;
+#X obj 2670 1330 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-3
+;
+#X msg 1790 1350 0;
+#X obj 1790 1370 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-4
+;
+#X obj 2230 1350 r \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-4
+;
+#X msg 2230 1370 /mTDelHarmo8/Lines/Harmo-Transpositions/tr-4 \$1;
+#X obj 2670 1350 route /mTDelHarmo8/Lines/Harmo-Transpositions/tr-4
+;
+#X obj 2670 1370 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-4
+;
+#X msg 1790 1390 0;
+#X obj 1790 1410 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-5
+;
+#X obj 2230 1390 r \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-5
+;
+#X msg 2230 1410 /mTDelHarmo8/Lines/Harmo-Transpositions/tr-5 \$1;
+#X obj 2670 1390 route /mTDelHarmo8/Lines/Harmo-Transpositions/tr-5
+;
+#X obj 2670 1410 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-5
+;
+#X msg 1790 1430 0;
+#X obj 1790 1450 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-6
+;
+#X obj 2230 1430 r \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-6
+;
+#X msg 2230 1450 /mTDelHarmo8/Lines/Harmo-Transpositions/tr-6 \$1;
+#X obj 2670 1430 route /mTDelHarmo8/Lines/Harmo-Transpositions/tr-6
+;
+#X obj 2670 1450 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-6
+;
+#X msg 1790 1470 0;
+#X obj 1790 1490 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-7
+;
+#X obj 2230 1470 r \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-7
+;
+#X msg 2230 1490 /mTDelHarmo8/Lines/Harmo-Transpositions/tr-7 \$1;
+#X obj 2670 1470 route /mTDelHarmo8/Lines/Harmo-Transpositions/tr-7
+;
+#X obj 2670 1490 s \$0-mTDelHarmo8/Lines/Harmo-Transpositions/tr-7
+;
+#X msg 1790 1510 1;
+#X obj 1790 1530 s \$0-mTDelHarmo8/Lines/Line-input/inp-0;
+#X obj 2230 1510 r \$0-mTDelHarmo8/Lines/Line-input/inp-0;
+#X msg 2230 1530 /mTDelHarmo8/Lines/Line-input/inp-0 \$1;
+#X obj 2670 1510 route /mTDelHarmo8/Lines/Line-input/inp-0;
+#X obj 2670 1530 s \$0-mTDelHarmo8/Lines/Line-input/inp-0;
+#X msg 1790 1550 1;
+#X obj 1790 1570 s \$0-mTDelHarmo8/Lines/Line-input/inp-1;
+#X obj 2230 1550 r \$0-mTDelHarmo8/Lines/Line-input/inp-1;
+#X msg 2230 1570 /mTDelHarmo8/Lines/Line-input/inp-1 \$1;
+#X obj 2670 1550 route /mTDelHarmo8/Lines/Line-input/inp-1;
+#X obj 2670 1570 s \$0-mTDelHarmo8/Lines/Line-input/inp-1;
+#X msg 1790 1590 1;
+#X obj 1790 1610 s \$0-mTDelHarmo8/Lines/Line-input/inp-2;
+#X obj 2230 1590 r \$0-mTDelHarmo8/Lines/Line-input/inp-2;
+#X msg 2230 1610 /mTDelHarmo8/Lines/Line-input/inp-2 \$1;
+#X obj 2670 1590 route /mTDelHarmo8/Lines/Line-input/inp-2;
+#X obj 2670 1610 s \$0-mTDelHarmo8/Lines/Line-input/inp-2;
+#X msg 1790 1630 1;
+#X obj 1790 1650 s \$0-mTDelHarmo8/Lines/Line-input/inp-3;
+#X obj 2230 1630 r \$0-mTDelHarmo8/Lines/Line-input/inp-3;
+#X msg 2230 1650 /mTDelHarmo8/Lines/Line-input/inp-3 \$1;
+#X obj 2670 1630 route /mTDelHarmo8/Lines/Line-input/inp-3;
+#X obj 2670 1650 s \$0-mTDelHarmo8/Lines/Line-input/inp-3;
+#X msg 1790 1670 1;
+#X obj 1790 1690 s \$0-mTDelHarmo8/Lines/Line-input/inp-4;
+#X obj 2230 1670 r \$0-mTDelHarmo8/Lines/Line-input/inp-4;
+#X msg 2230 1690 /mTDelHarmo8/Lines/Line-input/inp-4 \$1;
+#X obj 2670 1670 route /mTDelHarmo8/Lines/Line-input/inp-4;
+#X obj 2670 1690 s \$0-mTDelHarmo8/Lines/Line-input/inp-4;
+#X msg 1790 1710 1;
+#X obj 1790 1730 s \$0-mTDelHarmo8/Lines/Line-input/inp-5;
+#X obj 2230 1710 r \$0-mTDelHarmo8/Lines/Line-input/inp-5;
+#X msg 2230 1730 /mTDelHarmo8/Lines/Line-input/inp-5 \$1;
+#X obj 2670 1710 route /mTDelHarmo8/Lines/Line-input/inp-5;
+#X obj 2670 1730 s \$0-mTDelHarmo8/Lines/Line-input/inp-5;
+#X msg 1790 1750 1;
+#X obj 1790 1770 s \$0-mTDelHarmo8/Lines/Line-input/inp-6;
+#X obj 2230 1750 r \$0-mTDelHarmo8/Lines/Line-input/inp-6;
+#X msg 2230 1770 /mTDelHarmo8/Lines/Line-input/inp-6 \$1;
+#X obj 2670 1750 route /mTDelHarmo8/Lines/Line-input/inp-6;
+#X obj 2670 1770 s \$0-mTDelHarmo8/Lines/Line-input/inp-6;
+#X msg 1790 1790 1;
+#X obj 1790 1810 s \$0-mTDelHarmo8/Lines/Line-input/inp-7;
+#X obj 2230 1790 r \$0-mTDelHarmo8/Lines/Line-input/inp-7;
+#X msg 2230 1810 /mTDelHarmo8/Lines/Line-input/inp-7 \$1;
+#X obj 2670 1790 route /mTDelHarmo8/Lines/Line-input/inp-7;
+#X obj 2670 1810 s \$0-mTDelHarmo8/Lines/Line-input/inp-7;
+#X msg 1790 1830 1;
+#X obj 1790 1850 s \$0-mTDelHarmo8/Lines/Line-output/out-0;
+#X obj 2230 1830 r \$0-mTDelHarmo8/Lines/Line-output/out-0;
+#X msg 2230 1850 /mTDelHarmo8/Lines/Line-output/out-0 \$1;
+#X obj 2670 1830 route /mTDelHarmo8/Lines/Line-output/out-0;
+#X obj 2670 1850 s \$0-mTDelHarmo8/Lines/Line-output/out-0;
+#X msg 1790 1870 1;
+#X obj 1790 1890 s \$0-mTDelHarmo8/Lines/Line-output/out-1;
+#X obj 2230 1870 r \$0-mTDelHarmo8/Lines/Line-output/out-1;
+#X msg 2230 1890 /mTDelHarmo8/Lines/Line-output/out-1 \$1;
+#X obj 2670 1870 route /mTDelHarmo8/Lines/Line-output/out-1;
+#X obj 2670 1890 s \$0-mTDelHarmo8/Lines/Line-output/out-1;
+#X msg 1790 1910 1;
+#X obj 1790 1930 s \$0-mTDelHarmo8/Lines/Line-output/out-2;
+#X obj 2230 1910 r \$0-mTDelHarmo8/Lines/Line-output/out-2;
+#X msg 2230 1930 /mTDelHarmo8/Lines/Line-output/out-2 \$1;
+#X obj 2670 1910 route /mTDelHarmo8/Lines/Line-output/out-2;
+#X obj 2670 1930 s \$0-mTDelHarmo8/Lines/Line-output/out-2;
+#X msg 1790 1950 1;
+#X obj 1790 1970 s \$0-mTDelHarmo8/Lines/Line-output/out-3;
+#X obj 2230 1950 r \$0-mTDelHarmo8/Lines/Line-output/out-3;
+#X msg 2230 1970 /mTDelHarmo8/Lines/Line-output/out-3 \$1;
+#X obj 2670 1950 route /mTDelHarmo8/Lines/Line-output/out-3;
+#X obj 2670 1970 s \$0-mTDelHarmo8/Lines/Line-output/out-3;
+#X msg 1790 1990 1;
+#X obj 1790 2010 s \$0-mTDelHarmo8/Lines/Line-output/out-4;
+#X obj 2230 1990 r \$0-mTDelHarmo8/Lines/Line-output/out-4;
+#X msg 2230 2010 /mTDelHarmo8/Lines/Line-output/out-4 \$1;
+#X obj 2670 1990 route /mTDelHarmo8/Lines/Line-output/out-4;
+#X obj 2670 2010 s \$0-mTDelHarmo8/Lines/Line-output/out-4;
+#X msg 1790 2030 1;
+#X obj 1790 2050 s \$0-mTDelHarmo8/Lines/Line-output/out-5;
+#X obj 2230 2030 r \$0-mTDelHarmo8/Lines/Line-output/out-5;
+#X msg 2230 2050 /mTDelHarmo8/Lines/Line-output/out-5 \$1;
+#X obj 2670 2030 route /mTDelHarmo8/Lines/Line-output/out-5;
+#X obj 2670 2050 s \$0-mTDelHarmo8/Lines/Line-output/out-5;
+#X msg 1790 2070 1;
+#X obj 1790 2090 s \$0-mTDelHarmo8/Lines/Line-output/out-6;
+#X obj 2230 2070 r \$0-mTDelHarmo8/Lines/Line-output/out-6;
+#X msg 2230 2090 /mTDelHarmo8/Lines/Line-output/out-6 \$1;
+#X obj 2670 2070 route /mTDelHarmo8/Lines/Line-output/out-6;
+#X obj 2670 2090 s \$0-mTDelHarmo8/Lines/Line-output/out-6;
+#X msg 1790 2110 1;
+#X obj 1790 2130 s \$0-mTDelHarmo8/Lines/Line-output/out-7;
+#X obj 2230 2110 r \$0-mTDelHarmo8/Lines/Line-output/out-7;
+#X msg 2230 2130 /mTDelHarmo8/Lines/Line-output/out-7 \$1;
+#X obj 2670 2110 route /mTDelHarmo8/Lines/Line-output/out-7;
+#X obj 2670 2130 s \$0-mTDelHarmo8/Lines/Line-output/out-7;
+#X msg 1790 2150 0;
+#X obj 1790 2170 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-0
+;
+#X obj 2230 2150 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-0
+;
+#X msg 2230 2170 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-0 \$1
+;
+#X obj 2670 2150 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-0
+;
+#X obj 2670 2170 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-0
+;
+#X msg 1790 2190 0;
+#X obj 1790 2210 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-8
+;
+#X obj 2230 2190 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-8
+;
+#X msg 2230 2210 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-8 \$1
+;
+#X obj 2670 2190 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-8
+;
+#X obj 2670 2210 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-8
+;
+#X msg 1790 2230 0;
+#X obj 1790 2250 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-16
+;
+#X obj 2230 2230 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-16
+;
+#X msg 2230 2250 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-16 \$1
+;
+#X obj 2670 2230 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-16
+;
+#X obj 2670 2250 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-16
+;
+#X msg 1790 2270 0;
+#X obj 1790 2290 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-24
+;
+#X obj 2230 2270 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-24
+;
+#X msg 2230 2290 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-24 \$1
+;
+#X obj 2670 2270 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-24
+;
+#X obj 2670 2290 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-24
+;
+#X msg 1790 2310 0;
+#X obj 1790 2330 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-32
+;
+#X obj 2230 2310 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-32
+;
+#X msg 2230 2330 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-32 \$1
+;
+#X obj 2670 2310 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-32
+;
+#X obj 2670 2330 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-32
+;
+#X msg 1790 2350 0;
+#X obj 1790 2370 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-40
+;
+#X obj 2230 2350 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-40
+;
+#X msg 2230 2370 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-40 \$1
+;
+#X obj 2670 2350 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-40
+;
+#X obj 2670 2370 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-40
+;
+#X msg 1790 2390 0;
+#X obj 1790 2410 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-48
+;
+#X obj 2230 2390 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-48
+;
+#X msg 2230 2410 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-48 \$1
+;
+#X obj 2670 2390 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-48
+;
+#X obj 2670 2410 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-48
+;
+#X msg 1790 2430 0;
+#X obj 1790 2450 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-56
+;
+#X obj 2230 2430 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-56
+;
+#X msg 2230 2450 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-56 \$1
+;
+#X obj 2670 2430 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-56
+;
+#X obj 2670 2450 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-0/r-56
+;
+#X msg 1790 2470 0;
+#X obj 1790 2490 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-1
+;
+#X obj 2230 2470 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-1
+;
+#X msg 2230 2490 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-1 \$1
+;
+#X obj 2670 2470 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-1
+;
+#X obj 2670 2490 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-1
+;
+#X msg 1790 2510 0;
+#X obj 1790 2530 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-9
+;
+#X obj 2230 2510 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-9
+;
+#X msg 2230 2530 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-9 \$1
+;
+#X obj 2670 2510 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-9
+;
+#X obj 2670 2530 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-9
+;
+#X msg 1790 2550 0;
+#X obj 1790 2570 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-17
+;
+#X obj 2230 2550 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-17
+;
+#X msg 2230 2570 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-17 \$1
+;
+#X obj 2670 2550 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-17
+;
+#X obj 2670 2570 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-17
+;
+#X msg 1790 2590 0;
+#X obj 1790 2610 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-25
+;
+#X obj 2230 2590 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-25
+;
+#X msg 2230 2610 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-25 \$1
+;
+#X obj 2670 2590 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-25
+;
+#X obj 2670 2610 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-25
+;
+#X msg 1790 2630 0;
+#X obj 1790 2650 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-33
+;
+#X obj 2230 2630 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-33
+;
+#X msg 2230 2650 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-33 \$1
+;
+#X obj 2670 2630 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-33
+;
+#X obj 2670 2650 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-33
+;
+#X msg 1790 2670 0;
+#X obj 1790 2690 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-41
+;
+#X obj 2230 2670 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-41
+;
+#X msg 2230 2690 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-41 \$1
+;
+#X obj 2670 2670 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-41
+;
+#X obj 2670 2690 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-41
+;
+#X msg 1790 2710 0;
+#X obj 1790 2730 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-49
+;
+#X obj 2230 2710 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-49
+;
+#X msg 2230 2730 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-49 \$1
+;
+#X obj 2670 2710 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-49
+;
+#X obj 2670 2730 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-49
+;
+#X msg 1790 2750 0;
+#X obj 1790 2770 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-57
+;
+#X obj 2230 2750 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-57
+;
+#X msg 2230 2770 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-57 \$1
+;
+#X obj 2670 2750 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-57
+;
+#X obj 2670 2770 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-1/r-57
+;
+#X msg 1790 2790 0;
+#X obj 1790 2810 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-2
+;
+#X obj 2230 2790 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-2
+;
+#X msg 2230 2810 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-2 \$1
+;
+#X obj 2670 2790 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-2
+;
+#X obj 2670 2810 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-2
+;
+#X msg 1790 2830 0;
+#X obj 1790 2850 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-10
+;
+#X obj 2230 2830 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-10
+;
+#X msg 2230 2850 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-10 \$1
+;
+#X obj 2670 2830 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-10
+;
+#X obj 2670 2850 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-10
+;
+#X msg 1790 2870 0;
+#X obj 1790 2890 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-18
+;
+#X obj 2230 2870 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-18
+;
+#X msg 2230 2890 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-18 \$1
+;
+#X obj 2670 2870 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-18
+;
+#X obj 2670 2890 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-18
+;
+#X msg 1790 2910 0;
+#X obj 1790 2930 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-26
+;
+#X obj 2230 2910 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-26
+;
+#X msg 2230 2930 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-26 \$1
+;
+#X obj 2670 2910 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-26
+;
+#X obj 2670 2930 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-26
+;
+#X msg 1790 2950 0;
+#X obj 1790 2970 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-34
+;
+#X obj 2230 2950 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-34
+;
+#X msg 2230 2970 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-34 \$1
+;
+#X obj 2670 2950 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-34
+;
+#X obj 2670 2970 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-34
+;
+#X msg 1790 2990 0;
+#X obj 1790 3010 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-42
+;
+#X obj 2230 2990 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-42
+;
+#X msg 2230 3010 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-42 \$1
+;
+#X obj 2670 2990 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-42
+;
+#X obj 2670 3010 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-42
+;
+#X msg 1790 3030 0;
+#X obj 1790 3050 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-50
+;
+#X obj 2230 3030 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-50
+;
+#X msg 2230 3050 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-50 \$1
+;
+#X obj 2670 3030 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-50
+;
+#X obj 2670 3050 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-50
+;
+#X msg 1790 3070 0;
+#X obj 1790 3090 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-58
+;
+#X obj 2230 3070 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-58
+;
+#X msg 2230 3090 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-58 \$1
+;
+#X obj 2670 3070 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-58
+;
+#X obj 2670 3090 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-2/r-58
+;
+#X msg 1790 3110 0;
+#X obj 1790 3130 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-3
+;
+#X obj 2230 3110 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-3
+;
+#X msg 2230 3130 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-3 \$1
+;
+#X obj 2670 3110 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-3
+;
+#X obj 2670 3130 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-3
+;
+#X msg 1790 3150 0;
+#X obj 1790 3170 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-11
+;
+#X obj 2230 3150 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-11
+;
+#X msg 2230 3170 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-11 \$1
+;
+#X obj 2670 3150 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-11
+;
+#X obj 2670 3170 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-11
+;
+#X msg 1790 3190 0;
+#X obj 1790 3210 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-19
+;
+#X obj 2230 3190 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-19
+;
+#X msg 2230 3210 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-19 \$1
+;
+#X obj 2670 3190 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-19
+;
+#X obj 2670 3210 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-19
+;
+#X msg 1790 3230 0;
+#X obj 1790 3250 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-27
+;
+#X obj 2230 3230 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-27
+;
+#X msg 2230 3250 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-27 \$1
+;
+#X obj 2670 3230 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-27
+;
+#X obj 2670 3250 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-27
+;
+#X msg 1790 3270 0;
+#X obj 1790 3290 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-35
+;
+#X obj 2230 3270 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-35
+;
+#X msg 2230 3290 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-35 \$1
+;
+#X obj 2670 3270 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-35
+;
+#X obj 2670 3290 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-35
+;
+#X msg 1790 3310 0;
+#X obj 1790 3330 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-43
+;
+#X obj 2230 3310 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-43
+;
+#X msg 2230 3330 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-43 \$1
+;
+#X obj 2670 3310 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-43
+;
+#X obj 2670 3330 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-43
+;
+#X msg 1790 3350 0;
+#X obj 1790 3370 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-51
+;
+#X obj 2230 3350 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-51
+;
+#X msg 2230 3370 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-51 \$1
+;
+#X obj 2670 3350 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-51
+;
+#X obj 2670 3370 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-51
+;
+#X msg 1790 3390 0;
+#X obj 1790 3410 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-59
+;
+#X obj 2230 3390 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-59
+;
+#X msg 2230 3410 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-59 \$1
+;
+#X obj 2670 3390 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-59
+;
+#X obj 2670 3410 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-3/r-59
+;
+#X msg 1790 3430 0;
+#X obj 1790 3450 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-4
+;
+#X obj 2230 3430 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-4
+;
+#X msg 2230 3450 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-4 \$1
+;
+#X obj 2670 3430 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-4
+;
+#X obj 2670 3450 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-4
+;
+#X msg 1790 3470 0;
+#X obj 1790 3490 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-12
+;
+#X obj 2230 3470 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-12
+;
+#X msg 2230 3490 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-12 \$1
+;
+#X obj 2670 3470 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-12
+;
+#X obj 2670 3490 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-12
+;
+#X msg 1790 3510 0;
+#X obj 1790 3530 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-20
+;
+#X obj 2230 3510 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-20
+;
+#X msg 2230 3530 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-20 \$1
+;
+#X obj 2670 3510 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-20
+;
+#X obj 2670 3530 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-20
+;
+#X msg 1790 3550 0;
+#X obj 1790 3570 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-28
+;
+#X obj 2230 3550 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-28
+;
+#X msg 2230 3570 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-28 \$1
+;
+#X obj 2670 3550 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-28
+;
+#X obj 2670 3570 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-28
+;
+#X msg 1790 3590 0;
+#X obj 1790 3610 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-36
+;
+#X obj 2230 3590 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-36
+;
+#X msg 2230 3610 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-36 \$1
+;
+#X obj 2670 3590 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-36
+;
+#X obj 2670 3610 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-36
+;
+#X msg 1790 3630 0;
+#X obj 1790 3650 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-44
+;
+#X obj 2230 3630 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-44
+;
+#X msg 2230 3650 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-44 \$1
+;
+#X obj 2670 3630 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-44
+;
+#X obj 2670 3650 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-44
+;
+#X msg 1790 3670 0;
+#X obj 1790 3690 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-52
+;
+#X obj 2230 3670 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-52
+;
+#X msg 2230 3690 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-52 \$1
+;
+#X obj 2670 3670 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-52
+;
+#X obj 2670 3690 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-52
+;
+#X msg 1790 3710 0;
+#X obj 1790 3730 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-60
+;
+#X obj 2230 3710 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-60
+;
+#X msg 2230 3730 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-60 \$1
+;
+#X obj 2670 3710 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-60
+;
+#X obj 2670 3730 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-4/r-60
+;
+#X msg 1790 3750 0;
+#X obj 1790 3770 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-5
+;
+#X obj 2230 3750 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-5
+;
+#X msg 2230 3770 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-5 \$1
+;
+#X obj 2670 3750 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-5
+;
+#X obj 2670 3770 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-5
+;
+#X msg 1790 3790 0;
+#X obj 1790 3810 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-13
+;
+#X obj 2230 3790 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-13
+;
+#X msg 2230 3810 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-13 \$1
+;
+#X obj 2670 3790 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-13
+;
+#X obj 2670 3810 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-13
+;
+#X msg 1790 3830 0;
+#X obj 1790 3850 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-21
+;
+#X obj 2230 3830 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-21
+;
+#X msg 2230 3850 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-21 \$1
+;
+#X obj 2670 3830 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-21
+;
+#X obj 2670 3850 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-21
+;
+#X msg 1790 3870 0;
+#X obj 1790 3890 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-29
+;
+#X obj 2230 3870 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-29
+;
+#X msg 2230 3890 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-29 \$1
+;
+#X obj 2670 3870 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-29
+;
+#X obj 2670 3890 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-29
+;
+#X msg 1790 3910 0;
+#X obj 1790 3930 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-37
+;
+#X obj 2230 3910 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-37
+;
+#X msg 2230 3930 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-37 \$1
+;
+#X obj 2670 3910 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-37
+;
+#X obj 2670 3930 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-37
+;
+#X msg 1790 3950 0;
+#X obj 1790 3970 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-45
+;
+#X obj 2230 3950 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-45
+;
+#X msg 2230 3970 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-45 \$1
+;
+#X obj 2670 3950 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-45
+;
+#X obj 2670 3970 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-45
+;
+#X msg 1790 3990 0;
+#X obj 1790 4010 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-53
+;
+#X obj 2230 3990 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-53
+;
+#X msg 2230 4010 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-53 \$1
+;
+#X obj 2670 3990 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-53
+;
+#X obj 2670 4010 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-53
+;
+#X msg 1790 4030 0;
+#X obj 1790 4050 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-61
+;
+#X obj 2230 4030 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-61
+;
+#X msg 2230 4050 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-61 \$1
+;
+#X obj 2670 4030 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-61
+;
+#X obj 2670 4050 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-5/r-61
+;
+#X msg 1790 4070 0;
+#X obj 1790 4090 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-6
+;
+#X obj 2230 4070 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-6
+;
+#X msg 2230 4090 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-6 \$1
+;
+#X obj 2670 4070 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-6
+;
+#X obj 2670 4090 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-6
+;
+#X msg 1790 4110 0;
+#X obj 1790 4130 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-14
+;
+#X obj 2230 4110 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-14
+;
+#X msg 2230 4130 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-14 \$1
+;
+#X obj 2670 4110 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-14
+;
+#X obj 2670 4130 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-14
+;
+#X msg 1790 4150 0;
+#X obj 1790 4170 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-22
+;
+#X obj 2230 4150 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-22
+;
+#X msg 2230 4170 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-22 \$1
+;
+#X obj 2670 4150 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-22
+;
+#X obj 2670 4170 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-22
+;
+#X msg 1790 4190 0;
+#X obj 1790 4210 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-30
+;
+#X obj 2230 4190 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-30
+;
+#X msg 2230 4210 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-30 \$1
+;
+#X obj 2670 4190 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-30
+;
+#X obj 2670 4210 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-30
+;
+#X msg 1790 4230 0;
+#X obj 1790 4250 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-38
+;
+#X obj 2230 4230 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-38
+;
+#X msg 2230 4250 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-38 \$1
+;
+#X obj 2670 4230 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-38
+;
+#X obj 2670 4250 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-38
+;
+#X msg 1790 4270 0;
+#X obj 1790 4290 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-46
+;
+#X obj 2230 4270 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-46
+;
+#X msg 2230 4290 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-46 \$1
+;
+#X obj 2670 4270 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-46
+;
+#X obj 2670 4290 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-46
+;
+#X msg 1790 4310 0;
+#X obj 1790 4330 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-54
+;
+#X obj 2230 4310 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-54
+;
+#X msg 2230 4330 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-54 \$1
+;
+#X obj 2670 4310 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-54
+;
+#X obj 2670 4330 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-54
+;
+#X msg 1790 4350 0;
+#X obj 1790 4370 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-62
+;
+#X obj 2230 4350 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-62
+;
+#X msg 2230 4370 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-62 \$1
+;
+#X obj 2670 4350 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-62
+;
+#X obj 2670 4370 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-6/r-62
+;
+#X msg 1790 4390 0;
+#X obj 1790 4410 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-7
+;
+#X obj 2230 4390 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-7
+;
+#X msg 2230 4410 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-7 \$1
+;
+#X obj 2670 4390 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-7
+;
+#X obj 2670 4410 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-7
+;
+#X msg 1790 4430 0;
+#X obj 1790 4450 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-15
+;
+#X obj 2230 4430 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-15
+;
+#X msg 2230 4450 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-15 \$1
+;
+#X obj 2670 4430 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-15
+;
+#X obj 2670 4450 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-15
+;
+#X msg 1790 4470 0;
+#X obj 1790 4490 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-23
+;
+#X obj 2230 4470 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-23
+;
+#X msg 2230 4490 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-23 \$1
+;
+#X obj 2670 4470 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-23
+;
+#X obj 2670 4490 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-23
+;
+#X msg 1790 4510 0;
+#X obj 1790 4530 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-31
+;
+#X obj 2230 4510 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-31
+;
+#X msg 2230 4530 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-31 \$1
+;
+#X obj 2670 4510 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-31
+;
+#X obj 2670 4530 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-31
+;
+#X msg 1790 4550 0;
+#X obj 1790 4570 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-39
+;
+#X obj 2230 4550 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-39
+;
+#X msg 2230 4570 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-39 \$1
+;
+#X obj 2670 4550 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-39
+;
+#X obj 2670 4570 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-39
+;
+#X msg 1790 4590 0;
+#X obj 1790 4610 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-47
+;
+#X obj 2230 4590 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-47
+;
+#X msg 2230 4610 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-47 \$1
+;
+#X obj 2670 4590 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-47
+;
+#X obj 2670 4610 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-47
+;
+#X msg 1790 4630 0;
+#X obj 1790 4650 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-55
+;
+#X obj 2230 4630 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-55
+;
+#X msg 2230 4650 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-55 \$1
+;
+#X obj 2670 4630 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-55
+;
+#X obj 2670 4650 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-55
+;
+#X msg 1790 4670 0;
+#X obj 1790 4690 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-63
+;
+#X obj 2230 4670 r \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-63
+;
+#X msg 2230 4690 /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-63 \$1
+;
+#X obj 2670 4670 route /mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-63
+;
+#X obj 2670 4690 s \$0-mTDelHarmo8/Lines/Reinjection-Matrix/Del-7/r-63
+;
+#X text 0 310 Generated Wed Apr 12 17:44:41 2017 by faust2pd v2.15.
+See http://faust.grame.fr and http://purelang.bitbucket.org.;
+#X connect 0 0 13 1;
+#X connect 1 0 13 2;
+#X connect 2 0 13 3;
+#X connect 3 0 13 4;
+#X connect 4 0 13 5;
+#X connect 5 0 13 6;
+#X connect 6 0 13 7;
+#X connect 7 0 13 8;
+#X connect 8 0 10 0;
+#X connect 8 0 23 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 13 1 15 0;
+#X connect 13 2 16 0;
+#X connect 13 3 17 0;
+#X connect 13 4 18 0;
+#X connect 13 5 19 0;
+#X connect 13 6 20 0;
+#X connect 13 7 21 0;
+#X connect 13 8 22 0;
+#X connect 194 0 204 0;
+#X connect 194 0 210 0;
+#X connect 194 0 216 0;
+#X connect 194 0 222 0;
+#X connect 194 0 228 0;
+#X connect 194 0 234 0;
+#X connect 194 0 240 0;
+#X connect 194 0 246 0;
+#X connect 194 0 252 0;
+#X connect 194 0 258 0;
+#X connect 194 0 264 0;
+#X connect 194 0 270 0;
+#X connect 194 0 276 0;
+#X connect 194 0 282 0;
+#X connect 194 0 288 0;
+#X connect 194 0 294 0;
+#X connect 194 0 300 0;
+#X connect 194 0 306 0;
+#X connect 194 0 312 0;
+#X connect 194 0 318 0;
+#X connect 194 0 324 0;
+#X connect 194 0 330 0;
+#X connect 194 0 336 0;
+#X connect 194 0 342 0;
+#X connect 194 0 348 0;
+#X connect 194 0 354 0;
+#X connect 194 0 360 0;
+#X connect 194 0 366 0;
+#X connect 194 0 372 0;
+#X connect 194 0 378 0;
+#X connect 194 0 384 0;
+#X connect 194 0 390 0;
+#X connect 194 0 396 0;
+#X connect 194 0 402 0;
+#X connect 194 0 408 0;
+#X connect 194 0 414 0;
+#X connect 194 0 420 0;
+#X connect 194 0 426 0;
+#X connect 194 0 432 0;
+#X connect 194 0 438 0;
+#X connect 194 0 444 0;
+#X connect 194 0 450 0;
+#X connect 194 0 456 0;
+#X connect 194 0 462 0;
+#X connect 194 0 468 0;
+#X connect 194 0 474 0;
+#X connect 194 0 480 0;
+#X connect 194 0 486 0;
+#X connect 194 0 492 0;
+#X connect 194 0 498 0;
+#X connect 194 0 504 0;
+#X connect 194 0 510 0;
+#X connect 194 0 516 0;
+#X connect 194 0 522 0;
+#X connect 194 0 528 0;
+#X connect 194 0 534 0;
+#X connect 194 0 540 0;
+#X connect 194 0 546 0;
+#X connect 194 0 552 0;
+#X connect 194 0 558 0;
+#X connect 194 0 564 0;
+#X connect 194 0 570 0;
+#X connect 194 0 576 0;
+#X connect 194 0 582 0;
+#X connect 194 0 588 0;
+#X connect 194 0 594 0;
+#X connect 194 0 600 0;
+#X connect 194 0 606 0;
+#X connect 194 0 612 0;
+#X connect 194 0 618 0;
+#X connect 194 0 624 0;
+#X connect 194 0 630 0;
+#X connect 194 0 636 0;
+#X connect 194 0 642 0;
+#X connect 194 0 648 0;
+#X connect 194 0 654 0;
+#X connect 194 0 660 0;
+#X connect 194 0 666 0;
+#X connect 194 0 672 0;
+#X connect 194 0 678 0;
+#X connect 194 0 684 0;
+#X connect 194 0 690 0;
+#X connect 194 0 696 0;
+#X connect 194 0 702 0;
+#X connect 194 0 708 0;
+#X connect 194 0 714 0;
+#X connect 194 0 720 0;
+#X connect 194 0 726 0;
+#X connect 194 0 732 0;
+#X connect 194 0 738 0;
+#X connect 194 0 744 0;
+#X connect 194 0 750 0;
+#X connect 194 0 756 0;
+#X connect 194 0 762 0;
+#X connect 194 0 768 0;
+#X connect 194 0 774 0;
+#X connect 194 0 780 0;
+#X connect 194 0 786 0;
+#X connect 194 0 792 0;
+#X connect 194 0 798 0;
+#X connect 194 0 804 0;
+#X connect 194 0 810 0;
+#X connect 194 0 816 0;
+#X connect 194 0 822 0;
+#X connect 194 0 828 0;
+#X connect 194 0 834 0;
+#X connect 194 0 840 0;
+#X connect 194 0 846 0;
+#X connect 194 0 852 0;
+#X connect 194 0 858 0;
+#X connect 194 0 864 0;
+#X connect 194 0 870 0;
+#X connect 194 0 876 0;
+#X connect 194 0 882 0;
+#X connect 194 0 888 0;
+#X connect 194 0 894 0;
+#X connect 197 0 202 0;
+#X connect 198 0 199 0;
+#X connect 200 0 201 0;
+#X connect 201 0 195 0;
+#X connect 202 0 203 0;
+#X connect 202 1 208 0;
+#X connect 204 0 205 0;
+#X connect 206 0 207 0;
+#X connect 207 0 195 0;
+#X connect 208 0 209 0;
+#X connect 208 1 214 0;
+#X connect 210 0 211 0;
+#X connect 212 0 213 0;
+#X connect 213 0 195 0;
+#X connect 214 0 215 0;
+#X connect 214 1 220 0;
+#X connect 216 0 217 0;
+#X connect 218 0 219 0;
+#X connect 219 0 195 0;
+#X connect 220 0 221 0;
+#X connect 220 1 226 0;
+#X connect 222 0 223 0;
+#X connect 224 0 225 0;
+#X connect 225 0 195 0;
+#X connect 226 0 227 0;
+#X connect 226 1 232 0;
+#X connect 228 0 229 0;
+#X connect 230 0 231 0;
+#X connect 231 0 195 0;
+#X connect 232 0 233 0;
+#X connect 232 1 238 0;
+#X connect 234 0 235 0;
+#X connect 236 0 237 0;
+#X connect 237 0 195 0;
+#X connect 238 0 239 0;
+#X connect 238 1 244 0;
+#X connect 240 0 241 0;
+#X connect 242 0 243 0;
+#X connect 243 0 195 0;
+#X connect 244 0 245 0;
+#X connect 244 1 250 0;
+#X connect 246 0 247 0;
+#X connect 248 0 249 0;
+#X connect 249 0 195 0;
+#X connect 250 0 251 0;
+#X connect 250 1 256 0;
+#X connect 252 0 253 0;
+#X connect 254 0 255 0;
+#X connect 255 0 195 0;
+#X connect 256 0 257 0;
+#X connect 256 1 262 0;
+#X connect 258 0 259 0;
+#X connect 260 0 261 0;
+#X connect 261 0 195 0;
+#X connect 262 0 263 0;
+#X connect 262 1 268 0;
+#X connect 264 0 265 0;
+#X connect 266 0 267 0;
+#X connect 267 0 195 0;
+#X connect 268 0 269 0;
+#X connect 268 1 274 0;
+#X connect 270 0 271 0;
+#X connect 272 0 273 0;
+#X connect 273 0 195 0;
+#X connect 274 0 275 0;
+#X connect 274 1 280 0;
+#X connect 276 0 277 0;
+#X connect 278 0 279 0;
+#X connect 279 0 195 0;
+#X connect 280 0 281 0;
+#X connect 280 1 286 0;
+#X connect 282 0 283 0;
+#X connect 284 0 285 0;
+#X connect 285 0 195 0;
+#X connect 286 0 287 0;
+#X connect 286 1 292 0;
+#X connect 288 0 289 0;
+#X connect 290 0 291 0;
+#X connect 291 0 195 0;
+#X connect 292 0 293 0;
+#X connect 292 1 298 0;
+#X connect 294 0 295 0;
+#X connect 296 0 297 0;
+#X connect 297 0 195 0;
+#X connect 298 0 299 0;
+#X connect 298 1 304 0;
+#X connect 300 0 301 0;
+#X connect 302 0 303 0;
+#X connect 303 0 195 0;
+#X connect 304 0 305 0;
+#X connect 304 1 310 0;
+#X connect 306 0 307 0;
+#X connect 308 0 309 0;
+#X connect 309 0 195 0;
+#X connect 310 0 311 0;
+#X connect 310 1 316 0;
+#X connect 312 0 313 0;
+#X connect 314 0 315 0;
+#X connect 315 0 195 0;
+#X connect 316 0 317 0;
+#X connect 316 1 322 0;
+#X connect 318 0 319 0;
+#X connect 320 0 321 0;
+#X connect 321 0 195 0;
+#X connect 322 0 323 0;
+#X connect 322 1 328 0;
+#X connect 324 0 325 0;
+#X connect 326 0 327 0;
+#X connect 327 0 195 0;
+#X connect 328 0 329 0;
+#X connect 328 1 334 0;
+#X connect 330 0 331 0;
+#X connect 332 0 333 0;
+#X connect 333 0 195 0;
+#X connect 334 0 335 0;
+#X connect 334 1 340 0;
+#X connect 336 0 337 0;
+#X connect 338 0 339 0;
+#X connect 339 0 195 0;
+#X connect 340 0 341 0;
+#X connect 340 1 346 0;
+#X connect 342 0 343 0;
+#X connect 344 0 345 0;
+#X connect 345 0 195 0;
+#X connect 346 0 347 0;
+#X connect 346 1 352 0;
+#X connect 348 0 349 0;
+#X connect 350 0 351 0;
+#X connect 351 0 195 0;
+#X connect 352 0 353 0;
+#X connect 352 1 358 0;
+#X connect 354 0 355 0;
+#X connect 356 0 357 0;
+#X connect 357 0 195 0;
+#X connect 358 0 359 0;
+#X connect 358 1 364 0;
+#X connect 360 0 361 0;
+#X connect 362 0 363 0;
+#X connect 363 0 195 0;
+#X connect 364 0 365 0;
+#X connect 364 1 370 0;
+#X connect 366 0 367 0;
+#X connect 368 0 369 0;
+#X connect 369 0 195 0;
+#X connect 370 0 371 0;
+#X connect 370 1 376 0;
+#X connect 372 0 373 0;
+#X connect 374 0 375 0;
+#X connect 375 0 195 0;
+#X connect 376 0 377 0;
+#X connect 376 1 382 0;
+#X connect 378 0 379 0;
+#X connect 380 0 381 0;
+#X connect 381 0 195 0;
+#X connect 382 0 383 0;
+#X connect 382 1 388 0;
+#X connect 384 0 385 0;
+#X connect 386 0 387 0;
+#X connect 387 0 195 0;
+#X connect 388 0 389 0;
+#X connect 388 1 394 0;
+#X connect 390 0 391 0;
+#X connect 392 0 393 0;
+#X connect 393 0 195 0;
+#X connect 394 0 395 0;
+#X connect 394 1 400 0;
+#X connect 396 0 397 0;
+#X connect 398 0 399 0;
+#X connect 399 0 195 0;
+#X connect 400 0 401 0;
+#X connect 400 1 406 0;
+#X connect 402 0 403 0;
+#X connect 404 0 405 0;
+#X connect 405 0 195 0;
+#X connect 406 0 407 0;
+#X connect 406 1 412 0;
+#X connect 408 0 409 0;
+#X connect 410 0 411 0;
+#X connect 411 0 195 0;
+#X connect 412 0 413 0;
+#X connect 412 1 418 0;
+#X connect 414 0 415 0;
+#X connect 416 0 417 0;
+#X connect 417 0 195 0;
+#X connect 418 0 419 0;
+#X connect 418 1 424 0;
+#X connect 420 0 421 0;
+#X connect 422 0 423 0;
+#X connect 423 0 195 0;
+#X connect 424 0 425 0;
+#X connect 424 1 430 0;
+#X connect 426 0 427 0;
+#X connect 428 0 429 0;
+#X connect 429 0 195 0;
+#X connect 430 0 431 0;
+#X connect 430 1 436 0;
+#X connect 432 0 433 0;
+#X connect 434 0 435 0;
+#X connect 435 0 195 0;
+#X connect 436 0 437 0;
+#X connect 436 1 442 0;
+#X connect 438 0 439 0;
+#X connect 440 0 441 0;
+#X connect 441 0 195 0;
+#X connect 442 0 443 0;
+#X connect 442 1 448 0;
+#X connect 444 0 445 0;
+#X connect 446 0 447 0;
+#X connect 447 0 195 0;
+#X connect 448 0 449 0;
+#X connect 448 1 454 0;
+#X connect 450 0 451 0;
+#X connect 452 0 453 0;
+#X connect 453 0 195 0;
+#X connect 454 0 455 0;
+#X connect 454 1 460 0;
+#X connect 456 0 457 0;
+#X connect 458 0 459 0;
+#X connect 459 0 195 0;
+#X connect 460 0 461 0;
+#X connect 460 1 466 0;
+#X connect 462 0 463 0;
+#X connect 464 0 465 0;
+#X connect 465 0 195 0;
+#X connect 466 0 467 0;
+#X connect 466 1 472 0;
+#X connect 468 0 469 0;
+#X connect 470 0 471 0;
+#X connect 471 0 195 0;
+#X connect 472 0 473 0;
+#X connect 472 1 478 0;
+#X connect 474 0 475 0;
+#X connect 476 0 477 0;
+#X connect 477 0 195 0;
+#X connect 478 0 479 0;
+#X connect 478 1 484 0;
+#X connect 480 0 481 0;
+#X connect 482 0 483 0;
+#X connect 483 0 195 0;
+#X connect 484 0 485 0;
+#X connect 484 1 490 0;
+#X connect 486 0 487 0;
+#X connect 488 0 489 0;
+#X connect 489 0 195 0;
+#X connect 490 0 491 0;
+#X connect 490 1 496 0;
+#X connect 492 0 493 0;
+#X connect 494 0 495 0;
+#X connect 495 0 195 0;
+#X connect 496 0 497 0;
+#X connect 496 1 502 0;
+#X connect 498 0 499 0;
+#X connect 500 0 501 0;
+#X connect 501 0 195 0;
+#X connect 502 0 503 0;
+#X connect 502 1 508 0;
+#X connect 504 0 505 0;
+#X connect 506 0 507 0;
+#X connect 507 0 195 0;
+#X connect 508 0 509 0;
+#X connect 508 1 514 0;
+#X connect 510 0 511 0;
+#X connect 512 0 513 0;
+#X connect 513 0 195 0;
+#X connect 514 0 515 0;
+#X connect 514 1 520 0;
+#X connect 516 0 517 0;
+#X connect 518 0 519 0;
+#X connect 519 0 195 0;
+#X connect 520 0 521 0;
+#X connect 520 1 526 0;
+#X connect 522 0 523 0;
+#X connect 524 0 525 0;
+#X connect 525 0 195 0;
+#X connect 526 0 527 0;
+#X connect 526 1 532 0;
+#X connect 528 0 529 0;
+#X connect 530 0 531 0;
+#X connect 531 0 195 0;
+#X connect 532 0 533 0;
+#X connect 532 1 538 0;
+#X connect 534 0 535 0;
+#X connect 536 0 537 0;
+#X connect 537 0 195 0;
+#X connect 538 0 539 0;
+#X connect 538 1 544 0;
+#X connect 540 0 541 0;
+#X connect 542 0 543 0;
+#X connect 543 0 195 0;
+#X connect 544 0 545 0;
+#X connect 544 1 550 0;
+#X connect 546 0 547 0;
+#X connect 548 0 549 0;
+#X connect 549 0 195 0;
+#X connect 550 0 551 0;
+#X connect 550 1 556 0;
+#X connect 552 0 553 0;
+#X connect 554 0 555 0;
+#X connect 555 0 195 0;
+#X connect 556 0 557 0;
+#X connect 556 1 562 0;
+#X connect 558 0 559 0;
+#X connect 560 0 561 0;
+#X connect 561 0 195 0;
+#X connect 562 0 563 0;
+#X connect 562 1 568 0;
+#X connect 564 0 565 0;
+#X connect 566 0 567 0;
+#X connect 567 0 195 0;
+#X connect 568 0 569 0;
+#X connect 568 1 574 0;
+#X connect 570 0 571 0;
+#X connect 572 0 573 0;
+#X connect 573 0 195 0;
+#X connect 574 0 575 0;
+#X connect 574 1 580 0;
+#X connect 576 0 577 0;
+#X connect 578 0 579 0;
+#X connect 579 0 195 0;
+#X connect 580 0 581 0;
+#X connect 580 1 586 0;
+#X connect 582 0 583 0;
+#X connect 584 0 585 0;
+#X connect 585 0 195 0;
+#X connect 586 0 587 0;
+#X connect 586 1 592 0;
+#X connect 588 0 589 0;
+#X connect 590 0 591 0;
+#X connect 591 0 195 0;
+#X connect 592 0 593 0;
+#X connect 592 1 598 0;
+#X connect 594 0 595 0;
+#X connect 596 0 597 0;
+#X connect 597 0 195 0;
+#X connect 598 0 599 0;
+#X connect 598 1 604 0;
+#X connect 600 0 601 0;
+#X connect 602 0 603 0;
+#X connect 603 0 195 0;
+#X connect 604 0 605 0;
+#X connect 604 1 610 0;
+#X connect 606 0 607 0;
+#X connect 608 0 609 0;
+#X connect 609 0 195 0;
+#X connect 610 0 611 0;
+#X connect 610 1 616 0;
+#X connect 612 0 613 0;
+#X connect 614 0 615 0;
+#X connect 615 0 195 0;
+#X connect 616 0 617 0;
+#X connect 616 1 622 0;
+#X connect 618 0 619 0;
+#X connect 620 0 621 0;
+#X connect 621 0 195 0;
+#X connect 622 0 623 0;
+#X connect 622 1 628 0;
+#X connect 624 0 625 0;
+#X connect 626 0 627 0;
+#X connect 627 0 195 0;
+#X connect 628 0 629 0;
+#X connect 628 1 634 0;
+#X connect 630 0 631 0;
+#X connect 632 0 633 0;
+#X connect 633 0 195 0;
+#X connect 634 0 635 0;
+#X connect 634 1 640 0;
+#X connect 636 0 637 0;
+#X connect 638 0 639 0;
+#X connect 639 0 195 0;
+#X connect 640 0 641 0;
+#X connect 640 1 646 0;
+#X connect 642 0 643 0;
+#X connect 644 0 645 0;
+#X connect 645 0 195 0;
+#X connect 646 0 647 0;
+#X connect 646 1 652 0;
+#X connect 648 0 649 0;
+#X connect 650 0 651 0;
+#X connect 651 0 195 0;
+#X connect 652 0 653 0;
+#X connect 652 1 658 0;
+#X connect 654 0 655 0;
+#X connect 656 0 657 0;
+#X connect 657 0 195 0;
+#X connect 658 0 659 0;
+#X connect 658 1 664 0;
+#X connect 660 0 661 0;
+#X connect 662 0 663 0;
+#X connect 663 0 195 0;
+#X connect 664 0 665 0;
+#X connect 664 1 670 0;
+#X connect 666 0 667 0;
+#X connect 668 0 669 0;
+#X connect 669 0 195 0;
+#X connect 670 0 671 0;
+#X connect 670 1 676 0;
+#X connect 672 0 673 0;
+#X connect 674 0 675 0;
+#X connect 675 0 195 0;
+#X connect 676 0 677 0;
+#X connect 676 1 682 0;
+#X connect 678 0 679 0;
+#X connect 680 0 681 0;
+#X connect 681 0 195 0;
+#X connect 682 0 683 0;
+#X connect 682 1 688 0;
+#X connect 684 0 685 0;
+#X connect 686 0 687 0;
+#X connect 687 0 195 0;
+#X connect 688 0 689 0;
+#X connect 688 1 694 0;
+#X connect 690 0 691 0;
+#X connect 692 0 693 0;
+#X connect 693 0 195 0;
+#X connect 694 0 695 0;
+#X connect 694 1 700 0;
+#X connect 696 0 697 0;
+#X connect 698 0 699 0;
+#X connect 699 0 195 0;
+#X connect 700 0 701 0;
+#X connect 700 1 706 0;
+#X connect 702 0 703 0;
+#X connect 704 0 705 0;
+#X connect 705 0 195 0;
+#X connect 706 0 707 0;
+#X connect 706 1 712 0;
+#X connect 708 0 709 0;
+#X connect 710 0 711 0;
+#X connect 711 0 195 0;
+#X connect 712 0 713 0;
+#X connect 712 1 718 0;
+#X connect 714 0 715 0;
+#X connect 716 0 717 0;
+#X connect 717 0 195 0;
+#X connect 718 0 719 0;
+#X connect 718 1 724 0;
+#X connect 720 0 721 0;
+#X connect 722 0 723 0;
+#X connect 723 0 195 0;
+#X connect 724 0 725 0;
+#X connect 724 1 730 0;
+#X connect 726 0 727 0;
+#X connect 728 0 729 0;
+#X connect 729 0 195 0;
+#X connect 730 0 731 0;
+#X connect 730 1 736 0;
+#X connect 732 0 733 0;
+#X connect 734 0 735 0;
+#X connect 735 0 195 0;
+#X connect 736 0 737 0;
+#X connect 736 1 742 0;
+#X connect 738 0 739 0;
+#X connect 740 0 741 0;
+#X connect 741 0 195 0;
+#X connect 742 0 743 0;
+#X connect 742 1 748 0;
+#X connect 744 0 745 0;
+#X connect 746 0 747 0;
+#X connect 747 0 195 0;
+#X connect 748 0 749 0;
+#X connect 748 1 754 0;
+#X connect 750 0 751 0;
+#X connect 752 0 753 0;
+#X connect 753 0 195 0;
+#X connect 754 0 755 0;
+#X connect 754 1 760 0;
+#X connect 756 0 757 0;
+#X connect 758 0 759 0;
+#X connect 759 0 195 0;
+#X connect 760 0 761 0;
+#X connect 760 1 766 0;
+#X connect 762 0 763 0;
+#X connect 764 0 765 0;
+#X connect 765 0 195 0;
+#X connect 766 0 767 0;
+#X connect 766 1 772 0;
+#X connect 768 0 769 0;
+#X connect 770 0 771 0;
+#X connect 771 0 195 0;
+#X connect 772 0 773 0;
+#X connect 772 1 778 0;
+#X connect 774 0 775 0;
+#X connect 776 0 777 0;
+#X connect 777 0 195 0;
+#X connect 778 0 779 0;
+#X connect 778 1 784 0;
+#X connect 780 0 781 0;
+#X connect 782 0 783 0;
+#X connect 783 0 195 0;
+#X connect 784 0 785 0;
+#X connect 784 1 790 0;
+#X connect 786 0 787 0;
+#X connect 788 0 789 0;
+#X connect 789 0 195 0;
+#X connect 790 0 791 0;
+#X connect 790 1 796 0;
+#X connect 792 0 793 0;
+#X connect 794 0 795 0;
+#X connect 795 0 195 0;
+#X connect 796 0 797 0;
+#X connect 796 1 802 0;
+#X connect 798 0 799 0;
+#X connect 800 0 801 0;
+#X connect 801 0 195 0;
+#X connect 802 0 803 0;
+#X connect 802 1 808 0;
+#X connect 804 0 805 0;
+#X connect 806 0 807 0;
+#X connect 807 0 195 0;
+#X connect 808 0 809 0;
+#X connect 808 1 814 0;
+#X connect 810 0 811 0;
+#X connect 812 0 813 0;
+#X connect 813 0 195 0;
+#X connect 814 0 815 0;
+#X connect 814 1 820 0;
+#X connect 816 0 817 0;
+#X connect 818 0 819 0;
+#X connect 819 0 195 0;
+#X connect 820 0 821 0;
+#X connect 820 1 826 0;
+#X connect 822 0 823 0;
+#X connect 824 0 825 0;
+#X connect 825 0 195 0;
+#X connect 826 0 827 0;
+#X connect 826 1 832 0;
+#X connect 828 0 829 0;
+#X connect 830 0 831 0;
+#X connect 831 0 195 0;
+#X connect 832 0 833 0;
+#X connect 832 1 838 0;
+#X connect 834 0 835 0;
+#X connect 836 0 837 0;
+#X connect 837 0 195 0;
+#X connect 838 0 839 0;
+#X connect 838 1 844 0;
+#X connect 840 0 841 0;
+#X connect 842 0 843 0;
+#X connect 843 0 195 0;
+#X connect 844 0 845 0;
+#X connect 844 1 850 0;
+#X connect 846 0 847 0;
+#X connect 848 0 849 0;
+#X connect 849 0 195 0;
+#X connect 850 0 851 0;
+#X connect 850 1 856 0;
+#X connect 852 0 853 0;
+#X connect 854 0 855 0;
+#X connect 855 0 195 0;
+#X connect 856 0 857 0;
+#X connect 856 1 862 0;
+#X connect 858 0 859 0;
+#X connect 860 0 861 0;
+#X connect 861 0 195 0;
+#X connect 862 0 863 0;
+#X connect 862 1 868 0;
+#X connect 864 0 865 0;
+#X connect 866 0 867 0;
+#X connect 867 0 195 0;
+#X connect 868 0 869 0;
+#X connect 868 1 874 0;
+#X connect 870 0 871 0;
+#X connect 872 0 873 0;
+#X connect 873 0 195 0;
+#X connect 874 0 875 0;
+#X connect 874 1 880 0;
+#X connect 876 0 877 0;
+#X connect 878 0 879 0;
+#X connect 879 0 195 0;
+#X connect 880 0 881 0;
+#X connect 880 1 886 0;
+#X connect 882 0 883 0;
+#X connect 884 0 885 0;
+#X connect 885 0 195 0;
+#X connect 886 0 887 0;
+#X connect 886 1 892 0;
+#X connect 888 0 889 0;
+#X connect 890 0 891 0;
+#X connect 891 0 195 0;
+#X connect 892 0 893 0;
+#X connect 892 1 898 0;
+#X connect 894 0 895 0;
+#X connect 896 0 897 0;
+#X connect 897 0 195 0;
+#X connect 898 0 899 0;
+#X coords 0 -1 1 1 500 290 1 0 0;
